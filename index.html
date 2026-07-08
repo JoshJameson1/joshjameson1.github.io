@@ -416,7 +416,7 @@
     <section class="section" id="universe">
       <div class="section-head">
         <span class="section-title">Coverage universe</span>
-        <span class="section-count">Pending initiation</span>
+        <span class="section-count">8 names</span>
       </div>
       <div class="universe-grid" id="universe-grid">
         <div class="u-empty-card"><span class="u-empty-text">TBC</span></div>
@@ -436,7 +436,7 @@
 <footer>
   <div class="footer-inner">
     <span class="footer-note">For educational and portfolio purposes only. Not investment advice.</span>
-    <span class="footer-note">Updated June 2026</span>
+    <span class="footer-note">Updated July 2026</span>
   </div>
 </footer>
 
@@ -462,14 +462,13 @@
   // pdfUrl: relative path to the PDF file (e.g. 'sector-initiation-memo.pdf')
 
   const initiations = [
-    // Example (remove the // to activate):
-    // {
-    //   title: "Sector Initiation: Semiconductors & Strategic Materials",
-    //   date: "25 Jun 2026",
-    //   brief: "James (MD) asked for a two-page sector initiation memo covering 8–10 names across semis and strategic materials, with a macro thesis and one name flagged for immediate attention. Due Wednesday.",
-    //   tags: [{ label: "Semiconductors", type: "semi" }, { label: "Strategic materials", type: "materials" }],
-    //   pdfUrl: "sector-initiation-memo.pdf"
-    // }
+    {
+      title: "Semiconductors & Strategic Materials — Initiating Coverage: The Sustainability of the AI Boom",
+      date: "08 Jul 2026",
+      brief: "Task brief: produce a two-page sector initiation memo covering 8 names across semiconductors and strategic materials. Establish a macro thesis, organise the universe around structural pillars, assign ratings with rationale, and flag one name for immediate attention.",
+      tags: [{ label: "Semiconductors", type: "semi" }, { label: "Strategic materials", type: "materials" }, { label: "MU · SKHY · TSM · ASML · INTC · CCJ · RIO · LYC", type: "" }],
+      pdfUrl: "Semis_Materials_Initiation_July2026.pdf"
+    }
   ];
 
   const notes = [
@@ -482,9 +481,14 @@
 
   // Coverage universe — populate after initiation is complete
   const universe = [
-    // { ticker: "NVDA", name: "NVIDIA Corporation", exchange: "NASDAQ", type: "semi" },
-    // { ticker: "ASML", name: "ASML Holding", exchange: "Euronext AMS", type: "semi" },
-    // { ticker: "PLS", name: "Pilbara Minerals", exchange: "ASX", type: "materials" },
+    { ticker: "MU", name: "Micron Technology", exchange: "NASDAQ", type: "semi" },
+    { ticker: "SKHY", name: "SK Hynix ADR", exchange: "NASDAQ", type: "semi" },
+    { ticker: "TSM", name: "TSMC", exchange: "NYSE / Euronext", type: "semi" },
+    { ticker: "ASML", name: "ASML Holding", exchange: "Euronext AMS", type: "semi" },
+    { ticker: "INTC", name: "Intel Corporation", exchange: "NASDAQ", type: "semi" },
+    { ticker: "CCJ", name: "Cameco Corporation", exchange: "NYSE", type: "materials" },
+    { ticker: "RIO", name: "Rio Tinto", exchange: "LSE", type: "materials" },
+    { ticker: "LYC", name: "Lynas Rare Earths", exchange: "ASX", type: "materials" },
   ];
 
   // ── RENDER ──
